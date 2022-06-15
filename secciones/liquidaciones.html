@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis liquidaciones</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="shortcut icon" href="../img/logo.png"> 
+</head>
+<body>
+    <nav>
+        <div class="logo">
+        <a href="../index.html"><img src="../img/logo.png" alt="Logo de Administracion de Consorcio"></a>
+        </div>
+            <ul>
+                <li>
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="miCuenta.html">Mi cuenta</a>
+                </li>
+                <li>
+                    <a href="liquidaciones.html">Mis liquidaciones</a>
+                </li>
+                <li>
+                    <a href="nosotros.html">Nosotros</a>
+                </li>
+                <li>
+                    <a href="servicios.html">Servicios</a>
+                </li>
+                <li>
+                    <a href="../index.html#contacto">Contacto</a>
+                </li>
+            </ul>
+    </nav>
+    <main>
+        <section>
+            <h2 class="textoCentro">Mis Liquidaciones</h2>
+
+            <div class="displayLiquidacion"> 
+                <div class="displayLiquidacion2">
+                    <h2 class="texto__main--liqui">Pagar</h2>   
+                    <form action="envio.php" method="post">
+                        <fieldset class="fieldset__dp--liqui">
+                            <legend>Servicios</legend>
+                            <label for="expensas">Expensas Depto</label>
+                            <br>
+                            <input type="checkbox" value="expensas" id="expensas">
+                            <br>
+                            <label for="cochera">Cochera</label>
+                            <br>
+                            <input type="checkbox" value="cochera" id="cochera">
+                            <br>
+                            <input type="submit" value="Enviar">
+                            <input type="reset" value="Cancelar">
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+        <section>
+
+            <div class="displayLiquidacion">
+                <div>
+                    <h2 class="texto__main--liqui">Mi Liquidacion</h2>
+                    <form action="envio.php" method="post">
+                        <fieldset class="fieldset__dp--liqui">
+                            <legend>Entrega de liquidacion</legend>
+                            <label for="oficina">Retiro en oficina</label>
+                            <input type="radio" name="entrega" id="oficina" value="oficina">
+                            <br>
+                            <label for="envio">Envio</label>
+                            <input type="radio" name="entrega" id="envio" value="envio">
+                            <br>
+                            <label for="localidad"> Localidad </label>
+                            <select>
+                                <option value="caba">CABA</option>
+                                <option value="zonasur">Zona sur</option>
+                                <option value="zonanorte">Zona norte</option>
+                            </select>
+                            <br>
+                            <input type="submit" value="Enviar">
+                            <input type="reset" value="Cancelar">
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+        <section class="fieldset__dp--liqui">
+            <h2>Historial</h2>
+            <ol>
+                <li>
+                    <h4>
+                        Enero 2020 
+                    </h4>
+                </li>
+                <li>
+                    <h4>
+                        Febrero 2020 
+                    </h4>
+                </li>
+            </ol>
+        </section>
+
+    </main>
+    <footer>
+        <div class="footer__box--grey">
+            <h5 class="footer__dp"> ©CopyLucas 📌 Diego Milito y Av Colon</h5>
+                <div>
+                    <a href="https://www.instagram.com/"><img src="../img/instagram.png"></a>
+                    <a href="https://www.whatsapp.com"><img src="../img/whatsapp.png"></a>
+                    <a href="https://gmail.google.com/"><img src="../img/gmail.png"></a>
+                    <a href="https://www.linkedin.com/"><img src="../img/linkedln.png"></a>
+                </div>
+        </div>
+    </footer>  
+</body>
+</html>
