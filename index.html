@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Administración de Consorcio</title>
     <link rel="stylesheet" href="css/estilo.css">
-    <link rel="shortcut icon" href="img/logo.png"> 
+    <link rel="shortcut icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/animate.css"> 
 </head>
 <body>
     <div class="displayGrid">
@@ -36,7 +37,7 @@
                 </ul>
         </nav>
         <header class="header__img--fondo" id="headerGrid">
-            <h1>Administración de Consorcio</h1>
+            <h1 class="scale wow animate__bounceIn">Administración de Consorcio</h1>
         </header>
         <aside class="aside1" id="asideGrid">
             <h3> L</h3>
@@ -117,14 +118,25 @@
         <footer id="footerGrid">
             <div class="footer__box--grey">
                 <h5 class="footer__dp"> ©CopyLucas 📌 Diego Milito y Av Colon</h5>
-                    <div>
+                <div class="iconoDisplay">
+                    <div class="animacionIcono">
                         <a href="https://www.instagram.com/"><img src="img/instagram.png"></a>
-                        <a href="https://www.whatsapp.com"><img src="img/whatsapp.png"></a>
-                        <a href="https://gmail.google.com/"><img src="img/gmail.png"></a>
-                        <a href="https://www.linkedin.com/"><img src="img/linkedln.png"></a>
                     </div>
+                    <div class="animacionIcono">
+                        <a href="https://www.whatsapp.com"><img src="img/whatsapp.png"></a>
+                    </div>
+                    <div class="animacionIcono">
+                        <a href="https://gmail.google.com/"><img src="img/gmail.png"></a>
+                    </div>
+                    <div class="animacionIcono"><a href="https://www.linkedin.com/"><img src="img/linkedln.png"></a>
+                    </div>    
+                </div>
             </div>
         </footer>
     </div>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 </html>
