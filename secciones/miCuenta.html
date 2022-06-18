@@ -5,11 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi cuenta</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilo.css">
     <link rel="shortcut icon" href="../img/logo.png"> 
 </head>
-<body class="miCuenta">
-    <nav>
+<body class="miCuenta" id="micuentaGrid">
+    <nav class="navbar navbar-expand-lg bg-nav" id="navMicuenta">
+        <div class="container-fluid">
+            <div class="container navAnimacionlogo">
+                <a class="navbar-brand" href="../index.html">
+                <img src="../img/logo.png" alt="Edificio Adm de consorcio" width="90px" height="90 px"></a>
+                </div>
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse fw-bolder fs-3 px-2 navAnimacion" id="navbarNavDropdown">
+                <ul class="navbar-nav text-nowrap">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../secciones/miCuenta.html">Mi Cuenta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../secciones/liquidaciones.html">Mis Liquidaciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../secciones/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../secciones/servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#contactoIndex">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!--     <nav>
         <div class="logo">
             <a href="../index.html"><img src="../img/logo.png" alt="Logo de Administracion de Consorcio"></a>
         </div>
@@ -33,19 +65,33 @@
                     <a href="../index.html#contacto">Contacto</a>
                 </li>
             </ul>
-    </nav>
-    <aside class="numProblemas">
+    </nav> -->
+    <aside class="numProblemas fw-semibold" id="asideMicuenta">
         <h3>Somos la mejor eleccion</h3>
     </aside>
-    <main>
-        <section class="inicioSecion">
-            <h2 class="textoCentro">Inicia sesion</h2>
-            <div class="micuentaDisplay">
-                <div class="micuentaTexto">
-                    <h2>ADMINISTRACION DE CONSORCIO 
-                    </h2>
-                    <h3>Lorem ipsum dolor, sit, amet consectetur adipisicing elit. Commodi tenetur laborum a, amet.</h3></div>
-                <form action="envio.php" method="post">
+    <main class="inicioSecion fw-bold" id="sectionMicuenta">
+        <h2 class="textoCentro">Inicia sesion</h2>
+        <div class="micuentaDisplay">
+            <div class="micuentaTexto fs-3">
+                <h2>ADMINISTRACION DE CONSORCIO </h2>
+                <h3>Lorem ipsum dolor, sit, amet consectetur adipisicing elit. Commodi tenetur laborum a, amet.</h3>
+            </div>
+            <form class="fs-1 bg-form">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text"></div>
+                    </div>
+                    <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <button type="submit" class="btn btn-color">Iniciar Secion</button>
+                <button type="submit" class="btn btn-color">Registrate</button>
+            </form>
+        </div>
+    </main>
+                <!-- <form action="envio.php" method="post">
                     <fieldset>
                         <legend></legend>
                         <label for="nombre">Nombre:</label>
@@ -59,12 +105,9 @@
                         <br>
                         <button>Registrate</button>
                     </fieldset>
-                </form>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer id="footerGrid">
+                </form> -->
+
+    <footer id="footerMicuenta">
         <div class="footer__box--grey">
             <h5 class="footer__dp"> ©CopyLucas 📌 Diego Milito y Av Colon</h5>
             <div class="iconoDisplay">
@@ -82,5 +125,12 @@
             </div>
         </div>
     </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 </html>

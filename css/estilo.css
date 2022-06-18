@@ -22,7 +22,29 @@ body{
 	background-color: whitesmoke;
 }
 
-nav{
+.bg-nav{
+	background-color: #F4E6FD;
+	top: 0;
+	position: sticky;
+}
+.navAnimacionlogo img:hover{
+	transform: rotate(55deg);
+	transition: 3s;
+}
+.navAnimacion a{
+	color: black;
+	background-image: linear-gradient(currentColor,currentColor);
+	background-position: 0% 100%;
+	background-repeat: no-repeat;
+	background-size: 0% 2px;
+	transition: background-size .4s;
+}
+	.navAnimacion a:hover{
+		background-size: 100% 2px;
+		color: #5100A4;
+	}
+
+/*nav{
 	background-color: #F4E6FD;
 	display: flex;
 	align-items: center;
@@ -59,7 +81,7 @@ nav{
 						color: #5100A4;
 						cursor: pointer;
 						background-size: 100% 2px;
-			}
+			}*/
 .header__img--fondo{
 	background-image: url(../img/header.png);
 	width: 100%;
@@ -97,28 +119,47 @@ nav{
 /*Seccion 1*/
 
 
-.bg-violet{
+.bg-section{
+	background-color: #F4E6FD ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.bg-violet{
 	background-color: #F4E6FD;
-	margin: 20px;
+	margin: 10px;
 	border: solid rgba(131, 0, 254, 1.0) 1px;
 }
 .displaySeccion1{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-evenly;
+	justify-content: space-between;
 }
 .textoIzq{
 	text-align: left;
 	margin: 15px;
 	padding: 5px;
 	font-size: 1.5rem;
+	width: 50%;
 }
 .imgDerecha{
 	width: 50%;
 	height: 100%;
 	align-items: flex-end;
 }
-
+*/
 
 /*	Seccion 2
 
@@ -154,17 +195,19 @@ nav{
 
 /*Contacto*/
 
-
-.bgContacto{
-	background-color: whitesmoke;
-}
-.contacto__form{
-	margin: 20px;
-	font-size: 1.5rem;
+/*.contacto{
 	display: flex;
 	justify-content: space-around;
-	background-color: whitesmoke;
+	
+}
 
+.contacto__form{
+	width: 25%;
+	font-size: 1.5rem;
+	background-color: white;
+	display: flex;
+	justify-content: space-between;
+	padding: 5px;
 }
 .fieldset__form--sm{
 	align-items: flex-start;
@@ -172,12 +215,7 @@ nav{
 	text-align: center;
 	font-size: 3rem;
 }
-.displayMap{
-	border: solid rgba(131, 0, 254, 0.5) 1px;
-	align-items: flex-end;
-	margin: 50px;
-	padding: 10px;
-}
+*/
 
 
 /*Footer*/
@@ -207,36 +245,41 @@ nav{
 }
 
 /*Mi Cuenta*/
-
-
-.miCuenta main{
-	background-color: white;
+.numProblemas{
+	text-align: center;
+	font-size: 1.5rem;
+	color: #5100A4;
+	margin: auto;
 }
 .inicioSecion{
-	margin: 30px;
+	margin: auto;
+	background-image: url(../img/micuenta.jpg);
+	background-size: cover;
 }
+
 .micuentaDisplay{
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
 	text-align: center;
-	font-size: 1rem;
 }
 .micuentaTexto{
-	color: darkviolet;
-	margin: 40px;
-	padding: 10px;
-	font-size: 1.5rem;
+	color: #5100A4;
+	align-items: center;
 }
-
-.inicioSecion fieldset{
+.btn-color{
+	color: black;
+	font-size: 1.5rem;
+	background-color: #F4E6FD ;
+}
+/*.inicioSecion fieldset{
 	display:flex;
 	flex-direction: column;
 	padding: 20px;
 	border: solid rgba(131, 0, 254, 1.0) 1px;
 	text-align: center;
 	font-size: 3rem;
-}
+}*/
 
 
 /*Mis Liquidaciones*/
@@ -309,13 +352,14 @@ nav{
 .displayGrid{
 	display: grid;
 	min-height: 100vh;
-	grid-template-columns: 5% auto 80px;
-	grid-template-rows: 200px 80px 1fr 50px;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
 	grid-template-areas:
-	"header header header" 
-	"nab nab nab"
-	"aside section section"
-	"pie pie pie";
+	"header" 
+	"nab"
+	"section"
+	"aside"
+	"pie";
 }
 
 #navGrid{
@@ -326,10 +370,21 @@ nav{
 }
 #asideGrid{
 	grid-area: aside;
+	display: flex;
+	flex-direction: row;
+	padding: 10px;
 }
 #sectionGrid{
 	grid-area: section;
+
 }
+	.displaySeccion2 img{
+		height: 100%;
+	}	
+	.contacto{
+		display: flex;
+		justify-content: space-around;
+	}
 
 #footerGrid{
 	grid-area: pie;
@@ -337,33 +392,29 @@ nav{
 
 @media (max-width: 770px){
 	.displayGrid{
-		grid-template-rows: 200px 80px 1fr 50px 25px;
+		grid-template-columns: 10% 90%;
+		grid-template-rows:;
 		grid-template-areas:
-		"header header header" 
-		"nab nab nab"
-		"section section section"
-		"aside aside aside"
-		"pie pie pie";
+		"header header" 
+		"nab nab"
+		"section section"
+		"aside aside"
+		"pie pie";
 	}
 	.aside1{
-		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 	}
+	.contacto{
+		display: block;
+	}
+		.contacto__form{
+			width: 100%;
+		}
+
+
 }
 
-@media(max-width 480px){
-	.displayGrid{
-		grid-template-columns: auto;
-		grid-template-rows: 70px 50px 150px 50px;
-		grid-template-areas:
-		"header" 
-		"nab"
-		"section"
-		"aside"
-		"pie";
 
-	}
-}
 /* Nosotros Grid */
 
 
@@ -418,4 +469,48 @@ nav{
 	#asidenosotros{
 		flex-direction: column;
 	}
+}
+
+
+/* Mi cuenta Grid */
+
+#micuentaGrid{
+	display: grid;
+	min-height: 100vh;
+	grid-template-columns: 1fr;
+	grid-template-rows: 10% 5% 75% 10%;
+	grid-template-areas: 
+	"navcuenta"
+	"asidecuenta" 
+	"sectioncuenta"
+	"piecuenta";
+
+}
+#navMicuenta{
+	grid-area: navcuenta;
+}
+#asideMicuenta{
+	grid-area: asidecuenta;
+	text-align: center;
+}
+#sectionMicuenta{
+	grid-area: sectioncuenta;
+	margin-top: 0;
+	width: 100%;
+	height: 50vh;
+}
+#footerMicuenta{
+	grid-area: piecuenta;
+}
+
+@media (max-width: 770px){
+	#micuentaGrid{
+		grid-template-rows: auto;
+		grid-template-areas:
+		"navcuenta"
+		"sectioncuenta"
+		"asidecuenta"
+		"piecuenta";
+	}
+
 }

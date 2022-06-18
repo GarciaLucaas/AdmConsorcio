@@ -5,13 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Administración de Consorcio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="shortcut icon" href="img/logo.png">
     <link rel="stylesheet" href="css/animate.css"> 
 </head>
 <body>
     <div class="displayGrid">
-        <nav id="navGrid">
+        <nav class="navbar navbar-expand-lg bg-nav" id="navGrid">
+            <div class="container-fluid">
+                <div class="container navAnimacionlogo">
+                    <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.png" alt="Edificio Adm de consorcio" width="100px" height="100px"></a>
+                </div>
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse fw-bolder fs-3 px-2 navAnimacion" id="navbarNavDropdown">
+                    <ul class="navbar-nav text-nowrap">
+                        <li class="nav-item">
+                            <a class="nav-link" href="secciones/miCuenta.html">Mi Cuenta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="secciones/liquidaciones.html">Mis Liquidaciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="secciones/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="secciones/servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#contactoIndex">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+<!--         <nav id="navGrid">
             <div class="logo">
                 <a href="index.html"><img src="img/logo.png" alt="Logo de Administracion de Consorcio"></a>
             </div>
@@ -35,7 +67,7 @@
                         <a href="index.html#contacto">Contacto</a>
                     </li>
                 </ul>
-        </nav>
+        </nav> -->
         <header class="header__img--fondo" id="headerGrid">
             <h1 class="scale wow animate__bounceIn">Administración de Consorcio</h1>
         </header>
@@ -56,8 +88,41 @@
             <h3> Z</h3>
         </aside>
         <main id="sectionGrid">
-            <section class="bg-violet">
-                <article>
+            <section class="d-flex gap-3">
+                <div class="card mb-3 mt-3 bg-section" style="max-width: 50vw;">         
+                    <div class="row g-0">
+                        <div class="col-md-5">
+                            <img src="img/main1.png" class="img-fluid rounded-start" alt="...">
+                            </div> 
+                        <div class="col-md-7">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold fs-1">¿Cómo trabajamos?</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 mt-3 bg-section" style="max-width: 50vw;">
+                    <div class="row g-0">
+                        <div class="col-md-5">
+                            <img src="img/cliente.png" class="img-fluid rounded-start" alt="...">
+                        </div>
+                    <div class="col-md-7">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold fs-1">Atencion al cliente</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </section> 
+
+
+
+
+
+                <!-- <article>
+                <section class="bg-violet">
                     <h2 class="textoCentro">
                     ¿Cómo trabajamos?
                     </h2>
@@ -69,8 +134,8 @@
                         </p>
                         <img src="img/main1.png" alt="Expensas" class="imgDerecha">
                     </div>
-                </article>
-            </section>
+                </article> -->
+            <!-- </section>
             <section class="bg-violet">
                 <article>
                     <h2 class="textoCentro">
@@ -88,32 +153,43 @@
                         <img src="img/cliente.png" alt="Atencion al cliente" class="main__img--izq">
                     </div>
                 </article>
+            </section> -->
+            <section class="d-flex justify-content-around p-3" id="contactoIndex">
+                <div class="mb-3 w-50 fw-bolder fs-2">
+                    <label for="exampleFormControlInput1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
+                </div>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1640.7593152690213!2d-58.369098532410526!3d-34.66685785230132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a333edd9d38f45%3A0xab190172b8af4466!2sEl%20Cilindro!5e0!3m2!1ses-419!2sar!4v1652740228471!5m2!1ses-419!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </section>
-            <section>
-                    <h2 class="textoCentro">Contacto</h2>
-                    <div class="contacto__form">
-                        <form action="envio.php" method="post" id="contacto">
-                            <fieldset class="fieldset__form--sm">
-                                <legend>Contactanós</legend>
-                                <label for="nombre">Nombre</label>
-                                <input type="text" name="nombre" id="nombre">
-                                <br>
-                                <label for="email">Email</label>
-                                <input type="email" name="email" id="email">
-                                <br>
-                                <label for="mensaje">Mensaje:</label>
-                                <br>
-                                <textarea cols="40" rows="15"></textarea>
-                                <br>
-                                <input type="submit" value="Enviar">
-                                <input type="reset" value="Cancelar">
+            <!-- <section id="contactoIndex"> 
+                <h2 class="textoCentro">Contacto</h2>
+                <div class="contacto">
+                    <form action="envio.php" method="post" class="contacto__form">
+                        <fieldset class="fieldset__form--sm">
+                            <legend>Contactanós</legend>
+                            <label for="nombre">Nombre</label>
+                            <input type="text" name="nombre" id="nombre">
+                            <br>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email">
+                            <br>
+                            <label for="mensaje">Mensaje:</label>
+                            <br>
+                            <textarea cols="25" rows="10"></textarea>
+                            <br>
+                            <input type="submit" value="Enviar">
+                            <input type="reset" value="Cancelar">
                             </fieldset>    
-                        </form>
-                        <div class="displayMap">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1640.7593152690213!2d-58.369098532410526!3d-34.66685785230132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a333edd9d38f45%3A0xab190172b8af4466!2sEl%20Cilindro!5e0!3m2!1ses-419!2sar!4v1652740228471!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
+                    </form>
+                    <div class="displayMap">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1640.7593152690213!2d-58.369098532410526!3d-34.66685785230132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a333edd9d38f45%3A0xab190172b8af4466!2sEl%20Cilindro!5e0!3m2!1ses-419!2sar!4v1652740228471!5m2!1ses-419!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
-            </section>
+                </div>
+            </section> -->
         </main>
         <footer id="footerGrid">
             <div class="footer__box--grey">
@@ -134,6 +210,11 @@
             </div>
         </footer>
     </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="js/wow.min.js"></script>
     <script>
         new WOW().init();
