@@ -42,7 +42,69 @@
         </div>
     </nav>
     <main>
-        <section>
+        <h1 class="class textoCentro">Liquidacion</h1>
+        <section class="d-flex justify-content-around fs-3 fw-bolder mt-3">
+            <form class="row col-6 g-3 align-items-center">
+              <div class="col-12 ">
+                <label class="visually-hidden" for="inlineFormInputGroupUsername">Nombre</label>
+                <div class="input-group">
+                  <div class="input-group-text">@</div>
+                  <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username">
+                </div>
+              </div>
+              <div class="col-12">
+                <label class="visually-hidden" for="specificSizeSelect">Expensas</label>
+                <select class="form-select" id="specificSizeSelect">
+                  <option selected>Departamento</option>
+                  <option value="1">Enero</option>
+                  <option value="2">Febrero</option>
+                  <option value="3">Marzo</option>
+                </select>
+                <label class="visually-hidden" for="specificSizeSelect">Expensas</label>
+                <select class="form-select" id="specificSizeSelect">
+                  <option selected>Cochera</option>
+                  <option value="1">Enero</option>
+                  <option value="2">Febrero</option>
+                  <option value="3">Marzo</option>
+                </select>
+                <select class="form-select" id="specificSizeSelect">
+                  <option selected>Baulera</option>
+                  <option value="1">Enero</option>
+                  <option value="2">Febrero</option>
+                  <option value="3">Marzo</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="autoSizingCheck2">
+                  <label class="form-check-label" for="autoSizingCheck2">
+                    Remember me
+                  </label>
+                </div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-color">Pagar</button>
+              </div>
+            </form>
+            <div class="list-group co-6 ">
+                  <li class="list-group-item listColor">Recibos</li>
+                  <a href="#" class="list-group-item list-group-item-action listHover">Enero Pagado</a>
+                  <a href="#" class="list-group-item list-group-item-action listHover">Febrero Deuda</a>
+                  <a href="#" class="list-group-item list-group-item-action listHover">Marzo Deuda</a>
+            </div>
+            <div class="list-group co-6 ">
+                  <li class="list-group-item listColor">Liquidacion</li>
+                  <a href="#" class="list-group-item list-group-item-action listHover">Enero 2020</a>
+                  <a href="#" class="list-group-item list-group-item-action listHover">Febrero 2020</a>
+                  <a href="#" class="list-group-item list-group-item-action listHover">Marzo 2020</a>
+            </div>
+        </section>    
+
+
+
+
+
+ <!--        <section>
             <h2 class="textoCentro">Mis Liquidaciones</h2>
 
             <div class="displayLiquidacion"> 
@@ -66,10 +128,10 @@
                 </div>
             </div>
 
-        </section>
-        <section>
+        </section> -->
+        
 
-            <div class="displayLiquidacion">
+            <!-- <section><div class="displayLiquidacion">
                 <div>
                     <h2 class="texto__main--liqui">Mi Liquidacion</h2>
                     <form action="envio.php" method="post">
@@ -92,25 +154,8 @@
                             <input type="reset" value="Cancelar">
                         </fieldset>
                     </form>
-                </div>
-            </div>
-
-        </section>
-        <section class="fieldset__dp--liqui">
-            <h2>Historial</h2>
-            <ol>
-                <li>
-                    <h4>
-                        Enero 2020 
-                    </h4>
-                </li>
-                <li>
-                    <h4>
-                        Febrero 2020 
-                    </h4>
-                </li>
-            </ol>
-        </section>
+                </div> </section>
+            </div> -->
 
     </main>
     <footer id="footerGrid">

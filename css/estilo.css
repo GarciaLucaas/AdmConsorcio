@@ -170,7 +170,7 @@ body{
 	display: flex ;
 }
 */
-.displaySeccion2{
+/*.displaySeccion2{
 	display: flex;
 	flex-direction:row-reverse;
 }
@@ -191,7 +191,7 @@ body{
 .bg-violet:hover{
 	transform: translate(-10px);
 	transition: 2s;
-}
+}*/
 
 /*Contacto*/
 
@@ -283,9 +283,20 @@ body{
 
 
 /*Mis Liquidaciones*/
+.liquidacionForm{
+	border: solid rgba(131, 0, 254, 1.0) 1px;
+	width: 50vw;
+	text-align: center;
+}
 
+.listColor{
+	background-color:#F4E6FD ;
+}
+.listHover:hover{
+	background-color: #F4E6FD;
+}
 
-.texto__main--liqui{
+/*.texto__main--liqui{
 	margin: 30px;
 	font-size: 2.5rem;
 	text-align: center;
@@ -293,7 +304,7 @@ body{
 .displayLiquidacion{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-around;*/
 /* margin: 20px;
 	font-size: 1.5rem;
 	display: flex;
@@ -302,12 +313,12 @@ body{
  */
 }
 
-.fieldset__dp--liqui{
+/*.fieldset__dp--liqui{
 	margin: 30px;
 	border: solid rgba(131, 0, 254, 1.0) 1px;
 	font-size: 2.5rem;
 	background-color: white;
-}
+}*/
 
 
 /* Nosotros */
@@ -319,15 +330,29 @@ body{
 	margin: 30px;
 	align-items: center;
 	background-color: whitesmoke;
+	}
+.presupuesto{
+	border: solid rgba(131, 0, 254, 1.0) 1px;
+	margin: auto;
+	padding: 3px;
+	background-color:#F4E6FD;
+	width: 25vw;
+	margin: auto;
+	text-align: center;
 }
-.displayFotos{
+	.presupuesto a{
+		text-decoration: none;
+		font-size: 2.5rem;
+		color: black;
+	}
+/*.displayFotos{
 	display: flex;
 	justify-content: space-around;
 }
 	.displayFotos:hover{
 		transform: skew(15deg);
 		cursor: pointer;
-	}
+	}*/
 
 
 /* Servicios */
