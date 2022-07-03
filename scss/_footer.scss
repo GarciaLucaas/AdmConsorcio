@@ -2,19 +2,18 @@
 	font-family: $font;
 	display: flex;
 	flex-direction: column-reverse; 
-	background-color: $footerColor;
+	background-color: map-get($mapColores , $footerColor );
 	align-items: center;
 	padding: 5px;
 	margin: 5px;
 }
 .footer__dp{
 	font-size: 1rem;
-	justify-content: center;
+	@include flexbox(auto, center);
 }
 .iconoDisplay{
 	display: flex;
 	flex-direction: row;
-
 }
 
 .animacionIcono:hover{

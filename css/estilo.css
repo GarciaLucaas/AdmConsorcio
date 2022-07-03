@@ -43,9 +43,12 @@
   text-align: center;
   background: radial-gradient(circle, #cd81f2 56%, #f4e6fd 100%); }
 
-.bg-section {
+.bg-section, .bg-section1 {
   background-color: #F4E6FD;
   font-family: "Rubik", sans-serif; }
+
+.bg-section1 {
+  font-family: "Fira Sans", sans-serif; }
 
 .displayGrid {
   display: grid;
@@ -102,6 +105,8 @@
 
 .footer__dp {
   font-size: 1rem;
+  display: flex;
+  align-items: auto;
   justify-content: center; }
 
 .iconoDisplay {

@@ -1,5 +1,5 @@
 .bg-nav{
-	background-color: $primario;
+	background-color:map-get($mapColores, $primario );
 	top: 0;
 	position: sticky;
 }

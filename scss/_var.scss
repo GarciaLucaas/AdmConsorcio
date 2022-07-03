@@ -1,7 +1,19 @@
-//Colores
 $primario:#F4E6FD;
 $secundario:#5100A4;
 $footerColor:#8E8C8C;
 $black: #000000;
 $white:#FFFFFF;
 
+$mapColores:(
+    $primario:#F4E6FD,
+    $secundario:#5100A4,
+    $footerColor:#8E8C8C,
+    $black: #000000,
+    $white:#FFFFFF,
+)
+;
+@mixin flexbox($aling-items, $justify-content){
+    display: flex;
+    align-items: $aling-items;
+    justify-content: $justify-content;
+}

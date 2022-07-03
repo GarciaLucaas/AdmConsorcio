@@ -1,0 +1,10 @@
+Index:
+Agregue keyword(edificio, administrador, martillero, expesas) descripcion(100% confiable, somos la mejor opcion. Vamos a mejorar tu edificio), autor(Lucas Martinez) y cambie el titulo.
+Mi cuenta:
+Cambie titulo(Mi cuenta | Administracion de consorcio | Lucas Martinez),descripcion(Inicia sesion, 100% seguro). Lo demas igual.
+Nosotros:
+Cambie titulo(Nosotros | Administracion de consorcio | Lucas Martinez),descripcion(¿Por qué elegirnos? 10 años de experiencia). Lo demas igual.
+Servicios:
+Cambie titulo(Servicios | Administracion de consorcio | Lucas Martinez),descripcion(Mira nuestros servicios que te ofrecemos). Lo demas igual.
+Liquidaciones:
+Cambie titulo(Mis liquidaciones | Administracion de consorcio | Lucas Martinez),descripcion(Descarga tus liquidaciones sin necesidad de moverte de tu casa). Lo demas igual.
