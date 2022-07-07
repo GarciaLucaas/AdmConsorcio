@@ -45,121 +45,57 @@
         </div>
     </nav>
     <main>
-        <h1 class="class textoCentro">Liquidacion</h1>
-        <section class="d-flex justify-content-around fs-3 fw-bolder mt-3">
-            <form class="row col-6 g-3 align-items-center">
-              <div class="col-12 ">
-                <label class="visually-hidden" for="inlineFormInputGroupUsername">Nombre</label>
-                <div class="input-group">
-                  <div class="input-group-text">@</div>
-                  <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username">
+        <h1 class="textoCentro"> Mis Liquidaciones</h1>
+        <section class="row w-100 mt-3 mb-3">
+            <div  class="col-12 col-md-9 col-lg-4">
+              <form class="row w-100 col-6 g-3 align-items-center fs-2 fw-bold">
+                <div class="col-12 ">
+                  <label class="visually-hidden" for="inlineFormInputGroupUsername">Nombre</label>
+                  <div class="input-group">
+                    <div class="input-group-text">@</div>
+                    <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username">
+                  </div>
                 </div>
-              </div>
-              <div class="col-12">
-                <label class="visually-hidden" for="specificSizeSelect">Expensas</label>
-                <select class="form-select" id="specificSizeSelect">
-                  <option selected>Departamento</option>
-                  <option value="1">Enero</option>
-                  <option value="2">Febrero</option>
-                  <option value="3">Marzo</option>
-                </select>
-                <label class="visually-hidden" for="specificSizeSelect">Expensas</label>
-                <select class="form-select" id="specificSizeSelect">
-                  <option selected>Cochera</option>
-                  <option value="1">Enero</option>
-                  <option value="2">Febrero</option>
-                  <option value="3">Marzo</option>
-                </select>
-                <select class="form-select" id="specificSizeSelect">
-                  <option selected>Baulera</option>
-                  <option value="1">Enero</option>
-                  <option value="2">Febrero</option>
-                  <option value="3">Marzo</option>
-                </select>
-              </div>
-              <div class="col-12">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="autoSizingCheck2">
-                  <label class="form-check-label" for="autoSizingCheck2">
-                    Remember me
-                  </label>
+                <div class="col-12">
+                  <label class="visually-hidden" for="specificSizeSelect">Expensas</label>
+                  <select class="form-select" id="specificSizeSelect">
+                    <option selected>Departamento</option>
+                    <option value="1">Enero</option>
+                    <option value="2">Febrero</option>
+                    <option value="3">Marzo</option>
+                  </select>
+                  <label class="visually-hidden" for="specificSizeSelect">Expensas</label>
+                  <select class="form-select" id="specificSizeSelect">
+                    <option selected>Cochera</option>
+                    <option value="1">Enero</option>
+                    <option value="2">Febrero</option>
+                    <option value="3">Marzo</option>
+                  </select>
+                  <select class="form-select" id="specificSizeSelect">
+                    <option selected>Baulera</option>
+                    <option value="1">Enero</option>
+                    <option value="2">Febrero</option>
+                    <option value="3">Marzo</option>
+                  </select>
                 </div>
-              </div>
-              <div class="col-12">
-                <button type="submit" class="btn btn-color">Pagar</button>
-              </div>
-            </form>
-            <div class="list-group co-6 ">
-                  <li class="list-group-item listColor">Recibos</li>
-                  <a href="#" class="list-group-item list-group-item-action listHover">Enero Pagado</a>
-                  <a href="#" class="list-group-item list-group-item-action listHover">Febrero Deuda</a>
-                  <a href="#" class="list-group-item list-group-item-action listHover">Marzo Deuda</a>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-color">Pagar</button>
+                </div>
+              </form>
             </div>
-            <div class="list-group co-6 ">
-                  <li class="list-group-item listColor">Liquidacion</li>
-                  <a href="#" class="list-group-item list-group-item-action listHover">Enero 2020</a>
-                  <a href="#" class="list-group-item list-group-item-action listHover">Febrero 2020</a>
-                  <a href="#" class="list-group-item list-group-item-action listHover">Marzo 2020</a>
+            <div class="list-group coL-12 col-md-3 col-lg-4 fs-3 fw-bolder">
+                  <li class="list-group-item listColor1">Recibos</li>
+                  <a href="#" class="list-group-item list-group-item-action listHover1">Enero Pagado</a>
+                  <a href="#" class="list-group-item list-group-item-action listHover1">Febrero Deuda</a>
+                  <a href="#" class="list-group-item list-group-item-action listHover1">Marzo Deuda</a>
+            </div>
+            <div class="list-group col-6 col-md-3 col-lg-4 fs-3 fw-bolder">
+                  <li class="list-group-item listColor1">Liquidacion</li>
+                  <a href="#" class="list-group-item list-group-item-action listHover1">Enero 2020</a>
+                  <a href="#" class="list-group-item list-group-item-action listHover1">Febrero 2020</a>
+                  <a href="#" class="list-group-item list-group-item-action listHover1">Marzo 2020</a>
             </div>
         </section>    
-
-
-
-
-
- <!--        <section>
-            <h2 class="textoCentro">Mis Liquidaciones</h2>
-
-            <div class="displayLiquidacion"> 
-                <div class="displayLiquidacion2">
-                    <h2 class="texto__main--liqui">Pagar</h2>   
-                    <form action="envio.php" method="post">
-                        <fieldset class="fieldset__dp--liqui">
-                            <legend>Servicios</legend>
-                            <label for="expensas">Expensas Depto</label>
-                            <br>
-                            <input type="checkbox" value="expensas" id="expensas">
-                            <br>
-                            <label for="cochera">Cochera</label>
-                            <br>
-                            <input type="checkbox" value="cochera" id="cochera">
-                            <br>
-                            <input type="submit" value="Enviar">
-                            <input type="reset" value="Cancelar">
-                        </fieldset>
-                    </form>
-                </div>
-            </div>
-
-        </section> -->
-        
-
-            <!-- <section><div class="displayLiquidacion">
-                <div>
-                    <h2 class="texto__main--liqui">Mi Liquidacion</h2>
-                    <form action="envio.php" method="post">
-                        <fieldset class="fieldset__dp--liqui">
-                            <legend>Entrega de liquidacion</legend>
-                            <label for="oficina">Retiro en oficina</label>
-                            <input type="radio" name="entrega" id="oficina" value="oficina">
-                            <br>
-                            <label for="envio">Envio</label>
-                            <input type="radio" name="entrega" id="envio" value="envio">
-                            <br>
-                            <label for="localidad"> Localidad </label>
-                            <select>
-                                <option value="caba">CABA</option>
-                                <option value="zonasur">Zona sur</option>
-                                <option value="zonanorte">Zona norte</option>
-                            </select>
-                            <br>
-                            <input type="submit" value="Enviar">
-                            <input type="reset" value="Cancelar">
-                        </fieldset>
-                    </form>
-                </div> </section>
-            </div> -->
-
     </main>
     <footer id="footerGrid">
         <div class="footer__box--grey">

@@ -1,0 +1,29 @@
+.numProblemas{
+	text-align: center;
+	font-size: 1rem;
+	color: $secundario;
+	margin: auto;
+}
+.inicioSecion{
+	margin: auto;
+	background-image: url(../img/micuenta.jpg);
+	background-size: cover;
+}
+
+.micuentaDisplay{
+	@include flexbox(center, space-around);
+	text-align: center;
+	height: 55vh;
+}
+.micuentaTexto{
+	color: map-get($mapColores, $secundario);
+	align-items: center;
+}
+.btn-color{
+	color:$black;
+	font-size: 1.5rem;
+	background-color: $primario ;
+	padding: 10px;
+	margin-bottom: 10px;
+	margin: auto;
+}

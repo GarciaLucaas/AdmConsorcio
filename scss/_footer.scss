@@ -2,7 +2,7 @@
 	font-family: $font;
 	display: flex;
 	flex-direction: column-reverse; 
-	background-color: map-get($mapColores , $footerColor );
+	background-color: map-get($mapColores , $footerColor);
 	align-items: center;
 	padding: 5px;
 	margin: 5px;
@@ -14,6 +14,8 @@
 .iconoDisplay{
 	display: flex;
 	flex-direction: row;
+	padding: 10px;
+	gap: 2px;
 }
 
 .animacionIcono:hover{

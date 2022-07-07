@@ -9,25 +9,49 @@
   transition: 3s; }
 
 .navAnimacion a {
-  font-family: "Rubik", sans-serif;
-  color: #000000;
+  color: #030101;
+  text-decoration: none;
   background-image: linear-gradient(currentColor, currentColor);
   background-position: 0% 100%;
   background-repeat: no-repeat;
   background-size: 0% 2px;
   transition: background-size .4s; }
-  .navAnimacion a a:hover {
-    background-size: 100% 2px;
-    color: #5100A4; }
+  .navAnimacion a:hover {
+    background-size: 100% 2px; }
+
+.footer__box--grey {
+  font-family: "Rubik", sans-serif;
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: #ff7ade;
+  align-items: center;
+  padding: 5px;
+  margin: 5px; }
+
+.footer__dp {
+  font-size: 1rem;
+  display: flex;
+  align-items: auto;
+  justify-content: center; }
+
+.iconoDisplay {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  gap: 2px; }
+
+.animacionIcono:hover {
+  transform: rotatez(360deg);
+  transition: 4s; }
 
 .header__img--fondo {
   background-image: url(../img/header.png);
-  width: 100%; }
+  background-size: cover; }
   .header__img--fondo h1 {
     font-family: "Fira Sans", sans-serif;
-    font-size: 6rem;
+    font-size: 4rem;
     text-align: center;
-    margin: 5px;
+    margin: 10px;
     padding: 60px;
     color: black; }
 
@@ -35,20 +59,36 @@
   transform: scale(0.5);
   transition: 4s; }
 
-.aside1 {
+.aside1, .asidenos {
+  max-width: 100vw;
   font-family: "Fira Sans", sans-serif;
-  background-color: #FFFFFF;
-  font-size: 1.5rem;
-  color: #000000;
+  font-size: 1rem;
+  color: #030101;
   text-align: center;
   background: radial-gradient(circle, #cd81f2 56%, #f4e6fd 100%); }
 
 .bg-section, .bg-section1 {
   background-color: #F4E6FD;
-  font-family: "Rubik", sans-serif; }
+  font-family: "Rubik", sans-serif;
+  max-width: 95vw;
+  font-size: 1rem;
+  margin: auto;
+  margin-top: 5px; }
 
 .bg-section1 {
   font-family: "Fira Sans", sans-serif; }
+  .bg-section1 img {
+    height: auto;
+    width: auto;
+    max-width: 450px;
+    max-height: 450px; }
+
+.textoCentro {
+  text-align: center; }
+
+.mapa {
+  margin: auto;
+  padding: 0; }
 
 .displayGrid {
   display: grid;
@@ -66,7 +106,7 @@
 #asideGrid {
   grid-area: aside;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   padding: 10px; }
 
 #sectionGrid {
@@ -87,32 +127,83 @@
     grid-template-columns: 10% 90%;
     grid-template-rows: auto;
     grid-template-areas: "header header"  "nab nab" "section section" "aside aside" "pie pie"; }
-  .aside1 {
-    flex-direction: column; }
+  .aside1, .asidenos {
+    flex-direction: row; }
   .contacto {
     display: block; }
   .contacto__form {
     width: 100%; } }
 
-.footer__box--grey {
-  font-family: "Rubik", sans-serif;
-  display: flex;
-  flex-direction: column-reverse;
-  background-color: #8E8C8C;
-  align-items: center;
-  padding: 5px;
-  margin: 5px; }
-
-.footer__dp {
+.numProblemas {
+  text-align: center;
   font-size: 1rem;
-  display: flex;
-  align-items: auto;
-  justify-content: center; }
+  color: #5100A4;
+  margin: auto; }
 
-.iconoDisplay {
-  display: flex;
-  flex-direction: row; }
+.inicioSecion {
+  margin: auto;
+  background-image: url(../img/micuenta.jpg);
+  background-size: cover; }
 
-.animacionIcono:hover {
-  transform: rotatez(360deg);
-  transition: 4s; }
+.micuentaDisplay {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  height: 55vh; }
+
+.micuentaTexto {
+  color: #5100A4;
+  align-items: center; }
+
+.btn-color {
+  color: #030101;
+  font-size: 1.5rem;
+  background-color: #F4E6FD;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin: auto; }
+
+.listColor1 {
+  background-color: #F4E6FD;
+  font-family: "Fira Sans", sans-serif; }
+
+.listHover1:hover {
+  color: #5100A4;
+  background-color: #F4E6FD; }
+
+.asidenos {
+  display: flex;
+  flex-direction: column-reverse; }
+
+.main__dp--nosotros {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 30px;
+  padding: 10px;
+  align-items: center;
+  background-color: whitesmoke; }
+
+.displayFotos:hover {
+  transform: scale(1.2);
+  transition: 2s;
+  cursor: pointer; }
+
+.presupuesto {
+  font-family: "Rubik", sans-serif;
+  padding: 15px;
+  margin: auto;
+  background-color: #F4E6FD; }
+  .presupuesto a {
+    text-decoration: none;
+    color: #5100A4;
+    font-size: 1.5rem; }
+  .presupuesto:hover {
+    transform: scale(1.2);
+    transition: 2s; }
+
+.servicios {
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  font-size: 1rem;
+  background-color: #F4E6FD; }

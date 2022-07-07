@@ -1,0 +1,36 @@
+.asidenos{
+    @extend .aside1;
+        display: flex;
+        flex-direction: column-reverse;
+}  
+.main__dp--nosotros{
+	text-align: center;
+	font-size: 2.5rem;
+	margin: 30px;
+    padding: 10px;
+	align-items: center;
+	background-color: whitesmoke;
+}
+.displayFotos:hover{
+	transform: scale(1.2);
+	transition: 2s;
+	cursor: pointer;
+}
+.presupuesto{
+    font-family: $font;
+    padding: 15px;
+    margin: auto;
+    background-color: $primario;
+        a{
+            text-decoration: none;
+            color: $secundario;
+            font-size: 1.5rem;
+        }
+            &:hover{
+                transform: scale(1.2);
+	            transition: 2s;
+            }
+
+}
+
+

@@ -7,17 +7,16 @@
 	transform: rotate(55deg);
 	transition: 3s;
 }
-.navAnimacion a{
-	font-family: $font;
+.navAnimacion  a{
 	color: $black;
+	text-decoration: none;
 	background-image: linear-gradient(currentColor,currentColor);
 	background-position: 0% 100%;
 	background-repeat: no-repeat;
 	background-size: 0% 2px;
 	transition: background-size .4s;
-	a:hover{
+	&:hover{
 		background-size: 100% 2px;
-		color: $secundario;
 	}
 }
 
