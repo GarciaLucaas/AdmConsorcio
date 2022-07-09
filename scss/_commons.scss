@@ -3,12 +3,13 @@
 	background-image: url(../img/header.png);
 	background-size: cover;
 	h1{
-		font-family: $font2;
-		font-size: 3.5rem;
+		@include flexbox(center,center);
+		font-family: $font;
+		font-size: 1.5rem;
 		text-align: center;
-		margin: 10px;
-		padding: 60px;
+		margin: auto;
 		color: black;
+		padding: 50px;
 	}
 }
 

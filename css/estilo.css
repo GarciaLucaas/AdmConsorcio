@@ -46,12 +46,15 @@
   background-image: url(../img/header.png);
   background-size: cover; }
   .header__img--fondo h1 {
-    font-family: "Fira Sans", sans-serif;
-    font-size: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Rubik", sans-serif;
+    font-size: 1.5rem;
     text-align: center;
-    margin: 10px;
-    padding: 60px;
-    color: black; }
+    margin: auto;
+    color: black;
+    padding: 50px; }
 
 .scale:hover {
   transform: scale(0.5);
