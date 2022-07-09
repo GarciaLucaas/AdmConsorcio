@@ -1,8 +1,7 @@
 .bg-nav{
-	background-color:map-get($mapColores, $primario );
-	top: 0;
-	position: sticky;
+	background-color:map-get($mapColores, $primario);
 }
+
 .navAnimacionlogo img:hover{
 	transform: rotate(55deg);
 	transition: 3s;

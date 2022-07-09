@@ -4,7 +4,7 @@
 	background-size: cover;
 	h1{
 		font-family: $font2;
-		font-size: 4rem;
+		font-size: 3.5rem;
 		text-align: center;
 		margin: 10px;
 		padding: 60px;
@@ -24,23 +24,22 @@
 	text-align: center;
 	background: radial-gradient(circle, rgba(205,129,242,1) 56%, rgba(244,230,253,1) 100%);
 }
+.secciones{
+	gap: 5px;
+}
 .bg-section{
 	background-color: map-get($mapColores , $primario); ;
 	font-family: $font; 
-	max-width: 95vw;
 	font-size: 1rem;
 	margin: auto;
-	margin-top: 5px
-// 	@include flexbox(center , space-around);
+	margin-top: 5px;
 }
 .bg-section1{
 	@extend .bg-section;
 	font-family: $font2;
 	img{
+		width: 100%;
 		height: auto;
-		width: auto;
-		max-width: 450px;
-		max-height: 450px;
 	}
 }
 .textoCentro{

@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&family=Rubik:wght@300&display=swap");
 .bg-nav {
-  background-color: #F4E6FD;
-  top: 0;
-  position: sticky; }
+  background-color: #F4E6FD; }
 
 .navAnimacionlogo img:hover {
   transform: rotate(55deg);
@@ -49,7 +47,7 @@
   background-size: cover; }
   .header__img--fondo h1 {
     font-family: "Fira Sans", sans-serif;
-    font-size: 4rem;
+    font-size: 3.5rem;
     text-align: center;
     margin: 10px;
     padding: 60px;
@@ -67,10 +65,12 @@
   text-align: center;
   background: radial-gradient(circle, #cd81f2 56%, #f4e6fd 100%); }
 
+.secciones {
+  gap: 5px; }
+
 .bg-section, .bg-section1 {
   background-color: #F4E6FD;
   font-family: "Rubik", sans-serif;
-  max-width: 95vw;
   font-size: 1rem;
   margin: auto;
   margin-top: 5px; }
@@ -78,12 +78,10 @@
 .bg-section1 {
   font-family: "Fira Sans", sans-serif; }
   .bg-section1 img {
-    height: auto;
-    width: auto;
-    max-width: 450px;
-    max-height: 450px; }
+    width: 100%;
+    height: auto; }
 
-.textoCentro {
+.textoCentro, .textoCentro1 {
   text-align: center; }
 
 .mapa {
@@ -145,24 +143,48 @@
   background-image: url(../img/micuenta.jpg);
   background-size: cover; }
 
+.textoCentro1 {
+  font-family: "Fira Sans", sans-serif;
+  color: #030101; }
+
 .micuentaDisplay {
   display: flex;
   align-items: center;
   justify-content: space-around;
   text-align: center;
-  height: 55vh; }
+  height: 100vh; }
 
 .micuentaTexto {
   color: #5100A4;
   align-items: center; }
 
 .btn-color {
-  color: #030101;
-  font-size: 1.5rem;
-  background-color: #F4E6FD;
-  padding: 10px;
-  margin-bottom: 10px;
-  margin: auto; }
+  position: relative;
+  display: inline-block;
+  margin: 15px;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #5100A4;
+  background: transparent;
+  cursor: pointer;
+  border: 2px solid #5100A4;
+  border-radius: 10px;
+  transition: ease-out 0.5s;
+  box-shadow: inset 0 0 0 0 #F4E6FD; }
+  .btn-color:hover {
+    box-shadow: inset 0 -100px 0 0 #F4E6FD;
+    color: #030101; }
+  .btn-color .btn-color:active {
+    transform: scale(0.9); }
+
+.textoLiqui {
+  text-align: center;
+  align-items: center;
+  font-size: 3.5rem;
+  font-family: "Rubik", sans-serif; }
 
 .listColor1 {
   background-color: #F4E6FD;
